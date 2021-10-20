@@ -1,0 +1,30 @@
+.form-group{
+    flex: 0 0 100%;
+}
+
+.form-content{
+    max-width: 500px;
+}
+
+.message{
+    display: none;
+}
+
+.message-content{
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-exit{
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

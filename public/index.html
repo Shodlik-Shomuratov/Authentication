@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Student System - APPX</title>
+</head>
+<body>
+
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="brand-logo">
+                    APPX
+                </div>
+                <div class="navbar-second">
+                    <a href="./pages/register.html"><button class="btn btn-light">Register</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="container">
+            <div class="message-content">
+                <p class="message-text">Bunday foydalanuvchi yo'q!</p>
+                <p class="message-exit"><img alt="Exit"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="form">
+        <div class="container">
+            <div class="form-content">
+                <h1>Login</h1>
+                <form class="login-form">
+                    <div class="form-flex">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" autocomplete="off" name="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" autocomplete="off" name="password" id="password" required>
+                        </div>
+
+                        <a class="login-link"><button type="submit" class="btn btn-dark" id="register-btn">Login</button></a>
+
+                    </div>
+                </form>
+            </div>
+
+            <p class="lead-text">Don't have an account? <a href="./pages/register.html">Click here!</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                &copy; "APPX GROUP" 2020-2021
+            </div>
+        </div>
+    </div>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
