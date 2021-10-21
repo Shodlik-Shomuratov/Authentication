@@ -146,7 +146,7 @@ a{
 }
 
 .modal{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -193,5 +193,28 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 25px 0;
+}
+
+.message{
+    display: none;
+}
+
+.message-content{
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-exit{
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }

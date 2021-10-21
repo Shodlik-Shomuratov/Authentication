@@ -26,6 +26,8 @@ document.getElementById("registration-form").addEventListener("submit", e => {
     }).then( data => {
         const action = data.action
 
+        console.log(action)
+
         const modal = (modalText, link, buttonText, imgUrl) => {
             document.querySelector(".modal").style.display = "flex"
             document.querySelector(".modal-text").textContent = modalText
@@ -34,25 +36,23 @@ document.getElementById("registration-form").addEventListener("submit", e => {
             document.querySelector(".modal-img").setAttribute("src", imgUrl)
         }
     
-        console.log(action)
-    
         if(action == 0){
             modal(
-                "Ushbu E-mail orqali foydalanuvchi ro'yhatdan o'tgan.\n Iltimos qaytadan ro'yhatdan o'ting",
+                "Ushbu E-mail orqali foydalanuvchi ro'yhatdan o'tgan.\n Iltimos qaytadan ro'yxatdan o'ting",
                 "http://localhost:4200/pages/register.html",
                 "Ro'yhatdan o'tish",
                 "../images/warning.png"
                 )
         } else if(action == 1) {
             modal(
-                "Sizning E-mail akkauntingizga link yuborildi.\nIltimos akkauntingizni faollashtiring",
+                "Sizning E-mail akkauntingizga link yuborildi.\n Iltimos akkauntingizni faollashtiring",
                 "http://localhost:4200",
-                "Ok",
+                "Davom qilish",
                 "../images/success.png"
                 )
         } else {
             modal(
-                "Serverda xatolik!\nIltimos keyinroq urinib ko'ring!",
+                "Serverda xatolik! \n Iltimos keyinroq urinib ko'ring!",
                 "http://localhost:4200/pages/register.html",
                 "Keyinroq",
                 "../images/wrong.png"
@@ -60,9 +60,6 @@ document.getElementById("registration-form").addEventListener("submit", e => {
         }
     })
 
-    
-
-    
     e.preventDefault()
 })
 

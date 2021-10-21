@@ -11,6 +11,9 @@ document.querySelector(".login-form").addEventListener("submit", (e) => {
         document.querySelector(".message-content").style.backgroundColor = color
         document.querySelector(".message-text").textContent = text
         document.querySelector(".message-exit").firstChild.setAttribute(`src`, `../images/${image}.png`);
+        setInterval(() => {
+            document.querySelector(".message").style.display = "none"
+        }, 5000)
     }
 
     fetch("http://localhost:4200/api/login", {
@@ -44,4 +47,3 @@ document.querySelector(".login-form").addEventListener("submit", (e) => {
 
     e.preventDefault()
 })
-
